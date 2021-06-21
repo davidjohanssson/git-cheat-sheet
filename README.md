@@ -18,7 +18,7 @@ git checkout feature-1</p>
 git checkout master<br>
 git pull origin master<br>
 git merge feature-1<br>
-<i>(solve potential merge conflicts ...)</i>
+<i>(solve potential merge conflicts ...)</i><br>
 git push origin master</p>
 <p><strong>Remove local branch</strong><br>
 git branch -D feature-1</p>
