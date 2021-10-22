@@ -25,8 +25,7 @@ git branch -D feature-1</p>
 <p><strong>Remove remote branch</strong><br>
 git push origin --delete feature-1</p>
 <h2 id="changes">Changes</h2>
-<p><strong>Undo changes (not commited)</strong><br>
-git stash</p>
+<p><strong>Undo changes (not commited)</strong><br>git stash (save local changes)<br>git reset --hard (discard local changes )</p>
 <p><strong>Undo changes (commited)</strong><br>
 git reflog<br>
 <em>Note down the ID of the commit we want to go back to, e.g. 6b6271a</em><br>
