@@ -9,21 +9,58 @@
 
 <body class="stackedit">
   <div class="stackedit__html"><h1 id="git-cheat-sheet">Git Cheat Sheet</h1>
+    
 <h2 id="branches">Branches</h2>
-<p><strong>Create branch</strong><br>
-git branch feature-1</p>
-<p><strong>Go to branch</strong><br>
-git checkout feature-1</p>
-<p><strong>Merge feature-1 to master</strong><br>
-git checkout master<br>
-git pull origin master<br>
-git merge feature-1<br>
-<i>(solve potential merge conflicts ...)</i><br>
-git push origin master</p>
-<p><strong>Remove local branch</strong><br>
-git branch -D feature-1</p>
-<p><strong>Remove remote branch</strong><br>
-git push origin --delete feature-1</p>
+
+<p>
+  <strong>Create branch</strong>
+  <br>
+  git branch feature-1
+</p>
+    
+<p>
+  <strong>Go to branch</strong>
+  <br>
+  git checkout feature-1
+</p>
+    
+<p>
+  <strong>Merge feature-1 to master</strong>
+  <br>
+  git checkout master
+  <br>
+  git pull origin master
+  <br>
+  git merge feature-1
+  <br>
+  <i>(solve potential merge conflicts ...)</i><br>
+  git push origin master
+</p>
+    
+<p>
+  <strong>Remove local branch</strong>
+  <br>
+  git branch -D feature-1
+</p>
+    
+<p>
+  <strong>Remove remote branch</strong>
+  <br>
+  git push origin --delete feature-1
+</p>
+    
+<p>
+  <strong>Merge master into branch</strong>
+  <br>
+  git checkout master
+  <br>
+  git pull origin master
+  <br>
+  git checkout feature-1
+  <br>
+  git merge master
+</p>
+    
 <h2 id="changes">Changes</h2>
 <p><strong>Undo changes (not commited)</strong><br>git stash (save local changes)<br>git reset --hard (discard local changes)</p>
 <p><strong>Undo changes (commited)</strong><br>
